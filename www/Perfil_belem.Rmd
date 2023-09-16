@@ -1,0 +1,289 @@
+---
+title: "PERFIL ESTATÍSTICO MUNICIPAL"
+subtitle: "Boletim do Município de Belém"
+author: "Coordenadoria de Planejamento/DETRAN-PA"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document:
+    df_print: kable
+    highlight: tango
+    latex_engine: xelatex
+    fig_caption: yes
+    keep_tex: no
+    number_sections: yes
+    toc: yes
+    toc_depth: 6
+    fig_width: 7
+    fig_height: 6
+  fontsize: 12pt
+  html_document:
+    toc: yes
+    toc_depth: '4'
+    df_print: paged
+  word_document:
+    toc: yes
+    toc_depth: '4'
+abstract: "No cenário atual, no qual o planejamento e a gestão do município apresentam-se processos que exigem um diagnóstico global e continuado da realidade local, que acompanhem e interpretem a dinâmica municipal em seus diversos aspectos social, econômico e ambiental, a informação desagregada é de fundamental importância para planejadores e gestores de um modo geral. O Departamento de Trânsito do Estado do Pará (DETRAN-PA) entende que ao se organizarem, interpretarem e disponibilizarem dados, informações e diagnósticos necessários a esse processo, aumenta-se a possibilidade de acertos na tomada de decisões rumo às metas estabelecidas na gestão administrativa em qualquer esfera de governo. Dessa forma, disponibilizar informações municipalizadas permite aos governos disporem de instrumentos adequados para uma gestão descentralizada. Este Boletim tem o objetivo de apresentar um panorama sobre a acidentalidade no trânsito da cidade de Belém, apartir dos dados consolidados para o período de 2016 a 2022, sintetizados aqui para uma comunicação mais direta sobre a segurança viária no município."
+---
+
+
+\newpage
+# **INTRODUÇÃO**
+## **Aspectos Gerais**
+
+Em 2018, aproximadamente 1,35 milhão de pessoas morreram no mundo em consequência de acidentes de trânsito(WHO, 2018). No entanto, as consequências dos acidentes de trânsito no mundo vão além das áreas de trânsito e transporte, considerando-se um problema de saúde internacional e já tratado em alguns países como epidemia. No Brasil, os acidentes de trânsito representam um dos principais problemas de saúde pública presentes no país devido a sua elevada taxa de morbimortalidade, sobrecarga no Sistema de Saúde e repercussão social (LIMA et al., 2019).
+
+A integração de dados tem objetivo de fornecer acesso unificado a dados residentes em múltiplas e autonomas fontes de dados (DOMG e SRIVASTAVA, 2015). Logo, o processo de integração de dados é um modelo de gestão da informação aplicado a integração de múltiplas fontes de dados, desenvolvido a fim de apoiar a obtenção e integração de dados multissetorias de acidentes de trânsito (ABULATIF, 2018). Quanto a qualidade dos dados de óbitos provenientes dos Sistemas de Informações de sobre Mortalidade (SIM), dos Sistemas de Estatística de Acidentes dos Departamentos de Trânsito e Boletins de ocorrência das Policias Civis, observou-se aumento do percentual de causas mal definidas de morte. Em 2019, ainda se observam óbitos com códigos inespecíficos que, no caso de Acidentes de Trânsito e Transporte, podem chegar a 20% (MANDACARU et al., 2018). 
+
+Diante do exposto, os valores das estatísticas de mortalidade e morbidade por acidente de trânsito podem ser maiores, pois não existe, no Brasil, um sistema de informações que integre bases de dados da Saúde e do Trânsito com objetivo de definir os registros inespecíficos e qualificar a informação.
+
+
+Conhecer a mortalidade no Trânsito, com sua tendência nos diferentes municípios do Estado do Pará, possibilita identificar o padrão para um monitoramento mais fidedigno e avaliação de Políticas Públicas co m vistas a implementar ações mais efetivas para a redução destes eventos, que podem promover a redução dos custos do Sistema Ùnico de Saúde.
+
+
+Para superar essa limitação, será implantado no Estado do Pará, o processo de integração das bases de dados da saúde e trânsito, melhorando a qualidade dos dados, complementando as informações e, assim, possibilitando o planejamento de ações mais efetivas para prevenção e redução dos acidentes de trânsito.
+
+
+\newpage
+
+# **MATERIAL E MÉTODOS**
+## Caracterização da Àrea de Estudo 
+
+A abrangência geográﬁa dos dados referentes ao Projeto, contempla as informações coletadas dos boletins, relatórios, sistemas e planilhas, sobre  as ocorrências de acidentes de Trânsito distribuídos em 144 municípios do Estado do Pará.
+
+## Fontes de Coleta de Dados
+A Coleta de Dados sobre Acidentes de Trânsito que alimentam o Boletim de Estatística Municipal, são feitas junto as seguintes fontes secundárias:
+
+- Boletins de Ocorrência da Polícia Civil (SISP/PC);
+- Boletins de Ocorrência do Batalhão de Polícia Rodoviária Militar (BOAT/BPRE);
+- Boletins de Ocorrência da Polícia Rodoviária Federal (BOAT/PRF);
+- Boletins de Ocorrência de Resgate do Corpo de Bombeiros (BOAT/CBM);
+- Boletins de Ocorrência de Resgate do SAMU (BOAT/SAMU);
+- Laudos Periciais (IML);
+- Declaração de Òbito (DO/SESMA);
+- Declaração de Òbito (DO/SESPA);
+- Autorização de Internação Hospitalar (AIH/HMUE);
+
+## Recursos Computacionais
+Para criação do relatório em formato WEB e PDF, foi criado um script em Linguagem de Programação R-PROJECT versão 4.1.1 e um Ambiente de Desenvolvimento Integrado (IDE) chamado Rstudio versão 1.4.1.7 com uso de vários pacotes(packages), para o ambiente Windows. 
+
+
+## Linha de Base
+A definição de mortes e vítimas graves foi estalebecida com base no padrão da Organização Mundial de Saúde(WHO), que considera **Vítima Fatal** uma pessoa morta imediatamente ou até 30 dias, como resultado de acidente de Trânsito, e como **Vítima Grave** a pessoa hospitalizada por pelo menos 24 horas devido a ferimentos sofridos em acidentes de Trânsito (WHO, 2010).
+
+
+\newpage
+# **RESULTADOS**
+
+
+
+**Tabela 01**. Distribuição dos Acidentes, Feridos e Mortos Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+| **Belém**   | **Acidentes** | **Feridos** | **Mortos**  |
+| :---------: |  :---------:  | :---------: | :---------: |
+| 2016        |   10.399      |    4.278    |   115       |
+| 2017        |   10.442      |    4.021    |   124       |
+| 2018        |   10.461      |    3.925    |   126       |
+| 2019        |   10.400      |    3.790    |   125       |
+| 2020        |   10.283      |    3.622    |   134       |
+| 2021        |    8.878      |    2.932    |    97       |
+| 2022        |               |             |             |
+| 2023        |               |             |             |
+
+**Tabela 02**. Distribuição dos Acidentes de Trânsito por dia da Semana, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+| **SEMANA**  | **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+| :---------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| Domingo     | 1.340    | 1.263    |  1.122   |  1.195   |  1.183   |          |          |          |
+| Segunda     | 1.532    | 1.588    |  1.717   |  1.712   |  1.583   |          |          |          |
+| Terça       | 1.496    | 1.477    |  1.575   |  1.614   |  1.584   |          |          |          |
+| Quarta      | 1.452    | 1.551    |  1.560   |  1.484   |  1.502   |          |          |          |
+| Quinta      | 1.400    | 1.489    |  1.470   |  1.419   |  1.466   |          |          |          |
+| Sexta       | 1.701    | 1.604    |  1.674   |  1.570   |  1.500   |          |          |          |
+| Sábado      | 1.478    | 1.470    |  1.343   |  1.406   |  1.462   |          |          |          |
+| Total       | 10.399   | 10.442   |  10.461  |  10.400  |  10.283  |          |          |          | 
+
+
+**Tabela 03**. Distribuição dos Acidentes de Trânsito por Meses, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+|  **MESES**  | **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+| :---------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| Janeiro     |   957    |   837    |    946   |   930    |    911   |   901    |          |          |
+| Fevereiro   |   846    |   732    |   1.001  |   945    |    913   |   900    |          |          |
+| Março       |   747    |   785    |    999   |   918    |    903   |   899    |          |          |
+| Abril       |   840    |   712    |    894   |   895    |    899   |   889    |          |          |
+| Maio        |   852    |   985    |   1.003  |   934    |    932   |   900    |          |          |
+| Junho       |   908    |  1.191   |    914   |   848    |    825   |   899    |          |          |
+| Julho       |   767    |   789    |    678   |   810    |    809   |   880    |          |          |
+| Agosto      |   887    |   746    |   1.120  |   833    |    811   |   872    |          |          |
+| Setembro    |   906    |  1.036   |   1.048  |   832    |    814   |   879    |          |          |
+| Outubro     |   998    |  1.075   |   659    |   840    |    811   |   859    |          |          |
+| Novembro    |   838    |  808     |   665    |   820    |    815   |   860    |          |          |
+| Dezembro    |   853    |  746     |   531    |   795    |    813   |   890    |          |          |
+| Total       | 10.399   | 10.442   |  10.461  |  10.400  |  10.283  |  10.283  |          |          | 
+
+
+\newpage
+**Tabela 04**. Distribuição dos Acidentes de Trânsito por Turno, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+|  **TURNO**  | **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+| :---------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| Madrugada   |   737    |   733    |    555   |    533   |    534   |   377    |          |          |
+| Manhã       | 3.320    |  3.355   |  3.504   |  3.547   |  3.520   | 3.049    |          |          |
+| Tarde       | 3.685    |  3.662   |  3.825   |  3.875   |  3.807   | 3.171    |          |          |
+| Noite       | 2.657    |  2.692   |  2.544   |  2.445   |  2.422   | 2.281    |          |          |
+| Total       | 10.399   | 10.442   |  10.461  |  10.400  |  10.283  | 10.283   |          |          | 
+
+
+**Tabela 05**. Distribuição dos Acidentes de Trânsito por Faixa Horário, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+|  **FAIXA HORÁRIO**  | **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+| :---------:         | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| 00:00 - 03:59       |   475    |   467    |    346   |    338   |    359   |   301    |          |          |
+| 04:00 - 07:59       | 1.123    |  1.106   |  1.074   |  1.098   |  1.005   |   899    |          |          |
+| 08:00 - 11:59       | 2.459    |  2.515   |  2.639   |  2.596   |  2.675   | 2.301    |          |          |
+| 12:00 - 15:59       | 2.484    |  2.320   |  2.512   |  2.551   |  2.484   | 2.132    |          |          |
+| 16:00 - 19:59       | 2.483    |  2.615   |  2.320   |  2.633   |  2.575   | 2.201    |          |          |
+| 20:00 - 23:59       | 1.375    |  1.419   |  2.615   |  1.184   |  1.184   | 1.044    |          |          |
+|     Total           | 10.399   | 10.442   |  10.461  |  10.400  |  10.283  | 10.283   |          |          | 
+
+
+**Tabela 06**. Distribuição dos Acidentes de Trânsito por Faixa Horário, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+| **CONDIÇÃO VÍTIMAS**| **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+| :---------:         | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+|  Pedestre           |   641    |   576    |    570   |    535   |    510   |   379    |          |          |
+|  Passageiro         |   905    |   759    |    740   |    720   |    685   |   469    |          |          |
+|  Ciclista           |   424    |   363    |    360   |    335   |    315   |   205    |          |          |
+|  Condutor           |   123    |   115    |    110   |    101   |    102   |    80    |          |          |
+|  Motociclista       | 2.185    |  2.208   |  2.145   |  2.099   |  2.010   |  1.799   |          |          |
+|     Total           | 4.278    |  4.021   |  3.925   |  3.790   |  3.622   |  2.932   |          |          | 
+
+
+\newpage
+
+**Tabela 07**. Distribuição dos Acidentes de Trânsito por Tipos, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+| **Tipos de Acidentes**| **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+|         :---------:   | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| Abalroamento          |   619    |   608    |    672   |    615   |    575   |   449    |          |          |
+| Atropelamento         |   606    |   588    |    380   |    382   |    340   |   279    |          |          |
+| Capotamento           |    16    |    05    |     16   |     13   |     05   |    05    |          |          |
+| Choque Objeto Fixo    |   320    |   220    |    223   |    301   |    299   |   199    |          |          |
+| Colisão Bicicleta     |   539    |   457    |    323   |    270   |    285   |   215    |          |          |
+| Colisão Veículo       | 7.756    | 8.074    |  8.327   |  8.367   |  8.231   | 7.293    |          |          |
+| Outros                |    02    |    14    |     12   |     04   |     03   |    01    |          |          |
+| Queda Motocicleta     |   363    |   296    |    379   |    338   |    455   |   385    |          |          |
+| Queda de Ônibus       |   157    |   169    |    114   |    100   |     80   |    48    |          |          |
+| Tombamento            |    21    |    11    |     15   |     10   |     10   |    05    |          |          |
+|      Total            | 10.399   | 10.442   |  10.461  |  10.400  |  10.283  |  8.878   |          |          | 
+
+
+**Tabela 08**. Distribuição de Veículos por Tipos que se Envolveram em Acidentes de Trânsito, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+| **Tipos de Veículos** | **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+|         :---------:   | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| Bicicleta             |   547    |   465    |    330   |    385   |    342   |   102    |          |          |
+| Motocicleta           |  3.895   |  3.825   |  2.925   |  3.361   |  3.470   | 2.179    |          |          |
+| Automóvel             | 10.195   | 10.843   | 12.288   | 11.325   | 11.365   | 7.488    |          |          |
+| Táxi                  |   415    |   372    |    149   |    199   |    135   |    06    |          |          |
+| Camioneta             |   670    |   381    |    325   |    311   |    320   |   263    |          |          |
+| Outro Veículo Leve    |    04    |    28    |     20   |     10   |     01   |    01    |          |          |
+| Micro-Ônibus          |    93    |    80    |     68   |     47   |     40   |    24    |          |          |
+| Ônibus                | 2.183    |  2.235   |  1.958   |  1.910   |  1.658   |   736    |          |          |
+| Caminhonete           |   495    |   563    |    554   |    501   |    560   |   420    |          |          |
+| Caminhão              |   873    |   762    |    920   |    871   |    899   |   442    |          |          |
+| Carreta               |    93    |    71    |    126   |     70   |     75   |    77    |          |          |
+| Outro Veículo Pesado  |    25    |    31    |     27   |     10   |     10   |    04    |          |          |
+| Outros                |    29    |    59    |     14   |     10   |     02   |    01    |          |          |
+| Não Informado         |    17    |    19    |     54   |     02   |     01   |    01    |          |          |
+| Ambulância            |    36    |    44    |     27   |     15   |     14   |    09    |          |          |
+| Viatura Policial      |   296    |   241    |    130   |     90   |     90   |    60    |          |          |
+| Van                   |   235    |   209    |    134   |    120   |    133   |    66    |          |          |
+|      Total            | 20.101   | 20.228   |  20.052  |  19.237  |  19.115  |  11.876  |          |          | 
+
+
+
+
+**Tabela 09**. Distribuição de Acidentes de Trânsito, segundo local de Ocorrência, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+| **Local de Ocorrência**   | **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+|         :---------:       | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| Av  Augusto Montenegro    |   900    |   989    |  1011    |    952   |    945   |   801    |          |          |
+| Av. Almirante Barroso     |   596    |   575    |  676     |    621   |    599   |   497    |          |          |
+| Av. Pedro Alv. Cabral     |   370    |   379    |  405     |    399   |    410   |   341    |          |          |
+| Av. Arthur Bernardes      |   297    |   300    |  277     |    268   |    259   |   149    |          |          | 
+| Av. Julio César           |   244    |   233    |  258     |    262   |    275   |   233    |          |          | 
+| Av. Senador Lemos         |   209    |   192    |  210     |    199   |    195   |   131    |          |          | 
+| Av. Duque de Caxias       |   189    |   185    |  144     |    151   |    161   |   112    |          |          | 
+| Av. Pedro Miranda         |   154    |   162    |  155     |    125   |    135   |   133    |          |          | 
+| Av. Primeiro Dezembro     |   171    |   202    |  197     |    188   |    195   |   126    |          |          | 
+| Av. José Malcher          |   161    |   149    |  204     |    181   |    180   |   137    |          |          | 
+| Av. Independência         |   127    |   150    |   62     |    108   |    115   |          |          |          | 
+| Av. Visconde Sousa Franco |   135    |   131    |  140     |    134   |    134   |    99    |          |          | 
+| Av. José Bonifácio        |   174    |    134   |  121     |    120   |    125   |          |          |          | 
+| Av. Alcindo Cacela        |          |          |          |          |          |          |          |          |
+| Av. Tv Padre Eutíquio     |          |          |          |          |          |          |          |          | 
+| Av. Rua dos Mundurucus    |          |          |          |          |          |          |          |          | 
+| Av. TV Humaitá            |          |          |          |          |          |          |          |          | 
+| Av. Conselheiro Furtado   |          |          |          |          |          |          |          |          | 
+| Av. Bernardo Sayão        |          |          |          |          |          |          |          |          | 
+| Av. Assis de Vasconcelo   |          |          |          |          |          |          |          |          | 
+|      TOTAL                |          |          |          |          |          |          |          |          | 
+
+
+
+**Tabela 10**. Distribuição de Acidentes de Trânsito, segundo o Bairro de Ocorrência, Registrados no Município de Belém, durante o período de 2016 a 2023.
+
+| **Bairro de Ocorrência**  | **2016** | **2017** | **2018** | **2019** | **2020** | **2021** | **2022** | **2023** |
+|         :---------:       | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+|         MARCO             |   1031   |   1059   |  1129    |   1101   |   1088   |   905    |          |          |
+|         UMARIZAL          |    604   |   573    |  659     |    667   |    651   |   576    |          |          |
+|         PEDREIRA          |    589   |   610    |  560     |    536   |    524   |   491    |          |          |
+|         SÃO BRÁZ          |    507   |   501    |  505     |    468   |    451   |   391    |          |          | 
+|         MARAMBAIA         |    499   |   464    |  529     |    444   |    460   |   402    |          |          | 
+|         GUAMÁ             |    449   |   373    |  306     |    298   |    290   |   256    |          |          | 
+|         SACRAMENTA        |    420   |   406    |  383     |    377   |    360   |   315    |          |          | 
+|         NAZARÉ            |    411   |   433    |  466     |    452   |    419   |   371    |          |          | 
+|         CAMPINA           |    387   |   363    |  359     |    362   |    337   |   299    |          |          | 
+|         PARQUE VERDE      |    341   |   487    |  498     |    463   |    453   |   398    |          |          | 
+|         TELÉGRAFO         |    340   |   308    |  356     |    368   |    350   |   286    |          |          | 
+|         JURUNAS           |    336   |   321    |  238     |    225   |    215   |   196    |          |          | 
+|         BATISTA CAMPOS    |    310   |   319    |  367     |    344   |    328   |   286    |          |          | 
+|         CASTANHEIRA       |    309   |   326    |  351     |    301   |    285   |   236    |          |          |
+|         MANGUEIRÃO        |    289   |   318    |  267     |    271   |    261   |   215    |          |          | 
+|         TAPANÃ            |    267   |   283    |  272     |    258   |    286   |   250    |          |          | 
+|         VAL-DE-CÃES       |    254   |   208    |  207     |    218   |    285   |   206    |          |          | 
+|         SOUZA             |    226   |   211    |  280     |    179   |    193   |   171    |          |          | 
+|         CREMAÇÃO          |    225   |   247    |  216     |    225   |    213   |   185    |          |          | 
+|         REDUTO            |    210   |   223    |  289     |    259   |    235   |   205    |          |          | 
+|         BENGUÍ            |    161   |   167    |  185     |    190   |    205   |   187    |          |          | 
+|         CIDADE VELHA      |    159   |   156    |  183     |    179   |    170   |          |          |          | 
+|         PRATINHA          |    148   |   152    |  135     |    136   |    125   |          |          |          | 
+|         FÁTIMA            |    129   |   126    |  121     |    125   |    126   |          |          |          | 
+|         CONDOR            |    119   |   108    |  69      |    111   |    108   |          |          |          | 
+|         TERRA FIRME       |    119   |   133    |  109     |    79    |    78    |          |          |          | 
+|         TENONÉ            |    118   |   103    |  125     |    121   |    147   |          |          |          | 
+|         CABANAGEM         |    110   |   107    |  114     |    110   |    132   |          |          |          | 
+|         CRUZEIRO          |    109   |   110    |   86     |    99    |    82    |          |          |          | 
+|         CANUDOS           |    105   |    99    |   78     |    85    |     71   |          |          |          | 
+|         OUTROS            |   1.118  |  1.157   |  1.019   |   1.349  |   1.355  |          |          |          | 
+|      TOTAL                |   10.339 |  10.442  | 10.461   |  10.400  | 10.283   | 8.878    |          |          | 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

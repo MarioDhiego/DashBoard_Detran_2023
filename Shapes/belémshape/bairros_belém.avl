@@ -1,0 +1,394 @@
+/3.2
+(ODB.1
+	FirstRootClassName:	"Legend"
+	Roots:	2
+	Version:	32
+)
+
+(Legend.2
+	SymType:	0x02
+	LegType:	0x08
+	ClassType:	0x03
+	FieldNames:	3
+	Symbols:	4
+	Class:	44
+	Class:	45
+	Class:	46
+	Class:	47
+	Class:	48
+	Class:	49
+	Class:	50
+	Class:	51
+	StdDevs:	1.00000000000000
+	NullSym:	52
+	NullValues:	56
+	StatValues:	57
+	Precision:	-3
+)
+
+(AVStr.3
+	S:	"Nome"
+)
+
+(SymList.4
+	Child:	5
+	Child:	10
+	Child:	15
+	Child:	20
+	Child:	25
+	Child:	30
+	Child:	35
+	Child:	40
+)
+
+(BShSym.5
+	Color:	6
+	Outline:	1
+	OutlineColor:	7
+	OutlineWidth:	2.00000000000000
+	BgColor:	8
+	Style:	0x01
+	Stipple:	9
+)
+
+(TClr.6
+	Red:	0xcacc
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.7
+	Red:	0x170b
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.8
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(Stipple.9
+	Columns:	8
+	Rows:	8
+	Bits:	00000000 00000000 
+)
+
+(BShSym.10
+	Color:	11
+	Outline:	1
+	OutlineColor:	12
+	OutlineWidth:	2.00000000000000
+	BgColor:	13
+	Style:	0x01
+	Stipple:	14
+)
+
+(TClr.11
+	Red:	0xcacc
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.12
+	Red:	0x170b
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.13
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(Stipple.14
+	Columns:	8
+	Rows:	8
+	Bits:	00000000 00000000 
+)
+
+(BShSym.15
+	Color:	16
+	Outline:	1
+	OutlineColor:	17
+	OutlineWidth:	2.00000000000000
+	BgColor:	18
+	Style:	0x01
+	Stipple:	19
+)
+
+(TClr.16
+	Red:	0xcacc
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.17
+	Red:	0x170b
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.18
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(Stipple.19
+	Columns:	8
+	Rows:	8
+	Bits:	00000000 00000000 
+)
+
+(BShSym.20
+	Color:	21
+	Outline:	1
+	OutlineColor:	22
+	OutlineWidth:	2.00000000000000
+	BgColor:	23
+	Style:	0x01
+	Stipple:	24
+)
+
+(TClr.21
+	Red:	0xcacc
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.22
+	Red:	0x170b
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.23
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(Stipple.24
+	Columns:	8
+	Rows:	8
+	Bits:	00000000 00000000 
+)
+
+(BShSym.25
+	Color:	26
+	Outline:	1
+	OutlineColor:	27
+	OutlineWidth:	2.00000000000000
+	BgColor:	28
+	Style:	0x01
+	Stipple:	29
+)
+
+(TClr.26
+	Red:	0xcacc
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.27
+	Red:	0x170b
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.28
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(Stipple.29
+	Columns:	8
+	Rows:	8
+	Bits:	00000000 00000000 
+)
+
+(BShSym.30
+	Color:	31
+	Outline:	1
+	OutlineColor:	32
+	OutlineWidth:	2.00000000000000
+	BgColor:	33
+	Style:	0x01
+	Stipple:	34
+)
+
+(TClr.31
+	Red:	0xcacc
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.32
+	Red:	0x170b
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.33
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(Stipple.34
+	Columns:	8
+	Rows:	8
+	Bits:	00000000 00000000 
+)
+
+(BShSym.35
+	Color:	36
+	Outline:	1
+	OutlineColor:	37
+	OutlineWidth:	2.00000000000000
+	BgColor:	38
+	Style:	0x01
+	Stipple:	39
+)
+
+(TClr.36
+	Red:	0xcacc
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.37
+	Red:	0x170b
+	Green:	0xdb
+	Blue:	0xdc00
+)
+
+(TClr.38
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(Stipple.39
+	Columns:	8
+	Rows:	8
+	Bits:	00000000 00000000 
+)
+
+(BShSym.40
+	Color:	41
+	Outline:	1
+	OutlineColor:	42
+	OutlineWidth:	0.10000000000000
+	BgColor:	43
+)
+
+(TClr.41
+	Name:	"Transparent"
+)
+
+(TClr.42
+	Name:	"Transparent"
+)
+
+(TClr.43
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(LClass.44
+	IsText:	1
+	Label:	"CANUDOS"
+	MinStr:	"CANUDOS"
+	MaxStr:	"CANUDOS"
+	Precision:	-3
+)
+
+(LClass.45
+	IsText:	1
+	Label:	"CURIO-UTINGA"
+	MinStr:	"CURIO-UTINGA"
+	MaxStr:	"CURIO-UTINGA"
+	Precision:	-3
+)
+
+(LClass.46
+	IsText:	1
+	Label:	"GUAMA"
+	MinStr:	"GUAMA"
+	MaxStr:	"GUAMA"
+	Precision:	-3
+)
+
+(LClass.47
+	IsText:	1
+	Label:	"MARCO"
+	MinStr:	"MARCO"
+	MaxStr:	"MARCO"
+	Precision:	-3
+)
+
+(LClass.48
+	IsText:	1
+	Label:	"MONTESE TERRA FIRME"
+	MinStr:	"MONTESE TERRA FIRME"
+	MaxStr:	"MONTESE TERRA FIRME"
+	Precision:	-3
+)
+
+(LClass.49
+	IsText:	1
+	Label:	"SAO BRAZ"
+	MinStr:	"SAO BRAZ"
+	MaxStr:	"SAO BRAZ"
+	Precision:	-3
+)
+
+(LClass.50
+	IsText:	1
+	Label:	"UNIVERSITARIO"
+	MinStr:	"UNIVERSITARIO"
+	MaxStr:	"UNIVERSITARIO"
+	Precision:	-3
+)
+
+(LClass.51
+	IsNoData:	1
+	IsText:	1
+	Label:	"No Data"
+	Precision:	-3
+)
+
+(BShSym.52
+	Color:	53
+	Outline:	1
+	OutlineColor:	54
+	OutlineWidth:	0.10000000000000
+	BgColor:	55
+)
+
+(TClr.53
+	Name:	"Transparent"
+)
+
+(TClr.54
+	Name:	"Transparent"
+)
+
+(TClr.55
+	Red:	0xffff
+	Green:	0xffff
+	Blue:	0xffff
+)
+
+(NameDict.56
+)
+
+(NameDict.57
+)
+
